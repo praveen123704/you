@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+    body{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Courier New', Courier, monospace;
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 10px rgba(0, 0, blu0, 0.02);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #FFFFFF;
+    
+}
+.logo img{
+    height: 45px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 3px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #585b5b;
+    letter-spacing: 1px;
+}
+.hey{
+    color: #39bfbd;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-bottom: 2px solid #40c6c4;
+}
+nav ul li a:hover{
+    background-color: #2adabc;
+    color: #FFFFFF;
+    box-shadow: 5px 10px 30px rgba(64, 198, 196, 0.3);
+    transition: all ease 0.9s;
+}
+.model img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.model{
+    width: 500px;
+    height: 500px;
+}
+.content{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.main-text{
+    width: 500px;
+}
+.main-text h1{
+    font-size: 3.5rem;
+    color: #1c3548;
+    margin: 0px 0px 10px 0px;
+    line-height: 60px;
+}
+.portfolio-btn{
+    width: 190px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #1db096;
+    border-radius: 20px;
+    box-shadow: 4px 10px 30px rgba(24, 139, 119, 0.2);
+}
+.portfolio-btn:hover{
+    background-color: #23cdaf;
+    transition: all ease 0.4s;
+}
+.coni2{
+    width: 50%;
+    padding-left: 90px;
+}
+.coni3{
+    width: 50%;
+}
+.coni1{
+    display: flex;
+    justify-content: space-around;
+}
+#ani{ 
+    width: 600px;
+  height: 50px;
+  color: orangered;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+  text-shadow: 2px 2px 4px #000000;
+}
+#anmi{
+    animation-timing-function: linear;
+    text-shadow: 2px 2px 4px #000000;
+}
+@keyframes mymove {
+  from {right: 0px;}
+  to {right: 350px;}
+}
+#butt{
+    background-color: orangered;
+    padding: 10px;
+    width: 140px;
+    color: white;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-left: 200px;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#body {
+    border: 0px solid white;
+
+}
+#disp{
+    margin-top: 50px;
+    width: 400px;
+    border: 3px solid orangered;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+#disp1{
+    margin-left: 20px;
+    height: 150px;
+}
+#disp2{
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+#ski{
+    margin-left: 50px;
+}
+#rel{
+
+    position: relative;
+}
+#abb{
+    position: absolute;
+    top: 30px;
+    left: 620px;
+    font-weight:bolder;
+    color: black;
+    font-size: 40px;
+    line-height: 2.0;
+}
+#ph{
+ color: orangered;
+ margin-left: 30px;
+ font-size: 30px;
+ line-height: 0.4;
+}
+#phn{
+    font-size: 25px;
+    line-height: 0.4;
+    opacity: 0.5;
+}
+#ph2{
+ color: orangered;
+ margin-left: 30px;
+ font-size: 30px;
+ line-height: 0.4;
+ 
+}
+#phn2{
+    font-size: 25px;
+    line-height: 0.4;
+    opacity: 0.5;
+
+}
+#follow{
+    font-size: 20px;
+    color: orangered;
+    opacity: 0.1;
+    margin-left: 30px;
+
+}
+#ph3{
+ color: orangered;
+ margin-left: 30px;
+ font-size: 30px;
+ 
+ 
+}
+#ph4{
+ color: orangered;
+ margin-left: 30px;
+ font-size: 30px;
+
+ 
+}
+#ph5{
+ color: orangered;
+ margin-left: 30px;
+ font-size: 30px;
+ 
+ 
+}
+#ph6{
+ color: orangered;
+ margin-left: 30px;
+ font-size: 30px;
+
+ 
+}
+#ph8{
+ color: orangered;
+ margin-left: 30px;
+ font-size: 16px;
+ line-height: 0.4;
+ 
+}
+#ski{
+    margin-left: 50px;
+}
+#res{
+    color:orangered;
+    border: 1px solid orangered;
+    border-radius: 10px;
+    padding: 5px;
+}
+#res:hover{
+    background-color: orangered;
+    color: white;
+}
+#resume{
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+
+</style>
+</head>
+<body>
+    <section id="main" style="background-image:url(pt1.jpg)">
+        <nav style="background-image: url(pt1.jpg);">
+            <a href="#" class="logo">
+            </a>
+            <ul class="menu">
+                <li><a href="#" style="color:aliceblue;font-size: 20px;">HOME</a></li>
+                <li><a href="#content"style="color: aliceblue;font-size: 20px;">ABOUT ME</a></li>
+                <li><a href="#ani"style="color: aliceblue;font-size: 20px;">SKILLS</a></li>
+                <li><a href="#pro"style="color: aliceblue;font-size: 20px;">PROJECTS</a></li>
+                <li><a href="#rel"style="color: aliceblue;font-size: 20px;">CONTACT</a></li>
+            </ul>
+            <a href="#" class="hey">Say Hi!</a>
+        </nav>
+        <div class="content">
+            <div class="model">
+                <img src="avatoon2.png">
+            </div>
+            <div class="main-text">
+                <h1 style="color: aliceblue;">Hello, I am Praveen</h1>
+                <h1 style="color: red;">Jr. Front End Developer</h1>
+                <h3 style="color:white;">With a passion of Learning</h3>
+                <a href="#" class="portfolio-btn" style="color: aliceblue;">See my portfolio</a>
+            </div>
+        </div>
+        </section>
+        <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <br><br>
+    <div class="coni1" id="content"> 
+        <div> <img src="avatoon2.png" class="coni2">
+     </div>
+ 
+         <div class="coni3"><h1 style="font-weight: bold;">ABOUT <span style="color: orangered;">ME</span></h1>
+              I have a firm knowledge of HTML, CSS and JavaScript language and possess a <br> good knowledge 
+              of computer software packages (frameworks and tools) that are used <br>in today’s technology.<br><br>
+ 
+             On a personal level, I am highly-motivated, result oriented, 
+             self-driven, hard-working,<br> fast learner and constantly seeking
+              to improve my skills and am fully aware of the latest <br>Front-end Development Tools.<br><br>
+             
+             In addition to this, I have the ability to adapt to any 
+             type of team environment, I am team<br> oriented and get along 
+             with others when working in a group setting. I also have the ability 
+             to <br>work  independently while staying on schedule and meeting those tight deadlines.
+         </div>
+     </div>
+     <br><br>
+     <div class="container-sm" id="ani">
+        <h1 id="anim">My Current Technical Skills</h1>
+    </div>
+    <br><br>
+
+    
+
+
+
+    <div class="container-sm" >
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card "  id="body">
+        
+              <div class="card-body" >
+                <img src="html.png" width="90px" height="90px">&nbsp&nbsp
+                    <img src="css.png" width="90px" height="90px">&nbsp&nbsp
+                    <img src="boot.png" width="90px" height="90px">&nbsp&nbsp
+                    <img src="js.png" width="90px" height="90px">&nbsp&nbsp
+                    <img src="react-logo.png" width="90px" height="90px">
+
+                    <br><br><br>
+                    <ul id="list">
+                        <li>Good Knowlegde about HTML5, CSS, JavaScript </li>
+                        <li>Able to build a responsive websites using Bootstrap5</li>
+                        <li>The ability to write clean, maintainable , efficient code</li>
+                        <li>Ability to produce quality work products with attention to detail</li>
+                    </ul>
+        </div>
+        <div class="btn" id="butt" ><a href="#rel" style="color: white; text-decoration: none;">Hire Me</a></div>
+          </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card " id="bodr">
+        
+              <div class="card-body">
+                <img src="web-development-banner.jpg">
+              </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          <div class="container-sm" id="pjt">
+            <h1 id="pro">My Projects</h1>
+        </div>
+
+        <div class="container-sm">
+            <div class="row">
+                <div class="col-sm-4">
+                  <div class="card" id="disp">
+                      <div class="card-body">
+                       <img src="slide-01.jpg"  height="250px" width="360px" style="border-radius: 20px;">
+                      </div>
+                      <div class="card-title" id="disp1">
+                          <h3>KlassyCafe<span id="ski"><img src="html.png" height="50px" width="50px">
+                           <img src="css.png" height="50px" width="50px">
+                           <img src="boot.png" height="50px" width="50px"></span></h3> 
+                          <p>cafe corner</p>
+                          <a href="http://127.0.0.1:5502/monday.html" id="disp2">View Project</a>
+                      </div>
+                </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="card" id="disp">    
+                      <div class="card-body">
+                       <img src="hd1.jpg"  height="250px" width="360px" style="border-radius: 20px;">
+                      </div>
+                      <div class="card-title" id="disp1">
+                          <h3>Photos<span id="ski"><img src="html.png" height="50px" width="50px">
+                           <img src="css.png" height="50px" width="50px">
+                           <img src="boot.png" height="50px" width="50px"></span></h3> 
+                          <p>Camera world</p>
+                          <a href="http://127.0.0.1:5503/project.html" id="disp2">View Project</a>
+                      </div>
+                </div>
+                </div>
+                 <div class="col-sm-4">
+                  <div class="card" id="disp">
+                      <div class="card-body">
+                       <img src="int3.jpg"  height="250px" width="360px" style="border-radius: 20px;">
+                      </div>
+                      <div class="card-title" id="disp1">
+                          <h3>Rocket<span id="ski"><img src="html.png" height="50px" width="50px">
+                           <img src="css.png" height="50px" width="50px">
+                           <img src="boot.png" height="50px" width="50px"></span></h3> 
+                          <p>Rocket Landing Page</p>
+                          <a href="http://127.0.0.1:5500/int.html" id="disp2">View Project</a>
+                      </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container-sm my-5">
+            <div  id="resume"><a href="praveenresume.pdf.pdf" style="color: black; text-decoration: none;"> Download my <span id="res">Resume</span> here</a></div>
+               </div>
+         
+        <div class="container-fluid-sm my-5" id="rel">
+   
+            <div ><img src="cintact.jpg" width="1530px" height="600px"  ></div> 
+         
+             <div id="abb" ><h1 >Get in touch</h1>
+             <i class="fa fa-phone" aria-hidden="true" id="ph"></i> <span id="phn">+91 8050318740</span><br>
+         
+              <i class="fa fa-envelope" aria-hidden="true" id="ph2"></i> &nbsp;<span id="phn2">praveensinghcool765@gmail.com</span><br>
+             
+             <small id="follow"></small><br>
+            <a href="#home"> <i class="fa fa-instagram" id="ph3"></i></a> &nbsp; <a href="#home"><i class="fa fa-envelope" aria-hidden="true" id="ph4"></i> </a> &nbsp; <a href="#home"><i class="fa fa-linkedin" id="ph5"></i></a> &nbsp; <a href="#home"><i class="fa fa-twitter-square" id="ph6"></i></a>
+            <br> <p id="ph8"> Copyright 2021 Praveen. All Rights Reserved</p>
+         
+         </div>
+         
+         
+         
+         
+             </div>
+         
+            
+         
+
+  </body>
+</html>
+</body>
+</html>
